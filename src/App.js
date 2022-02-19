@@ -7,18 +7,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <main className="main">
-            <Routes>
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/signin" element={<Signin />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/invite" element={<Invite />} />
-            </Routes>
-          </main>
-        </header>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/invite" element={<Invite />} />
+        </Routes>
       </div>
     </Router>
   );
